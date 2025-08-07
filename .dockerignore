@@ -1,0 +1,11 @@
+# Ignore everything by default
+**
+
+# Allow only the backend and render blueprint into the build context
+!diamond-backend/**
+!render.yaml
+
+# Common ignores
+.git
+node_modules
+**/node_modules

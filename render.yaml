@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: diamond-backend
+    env: docker
+    dockerfilePath: diamond-backend/Dockerfile
+    autoDeploy: true
+    healthCheckPath: /health
