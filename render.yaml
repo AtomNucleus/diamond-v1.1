@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: diamond-backend
+    name: diamond-v1-1
     env: docker
     dockerfilePath: diamond-backend/Dockerfile
     autoDeploy: true
