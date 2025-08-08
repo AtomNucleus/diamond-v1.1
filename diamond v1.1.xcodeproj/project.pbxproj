@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2E240E162DB7503A00CA97D3 /* LinkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2E240E152DB7503A00CA97D3 /* LinkKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2EC99B512DAA318400AB8508 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E240E162DB7503A00CA97D3 /* LinkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +77,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E7E57A42DB05735009CA2C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2EC99B3A2DAA318100AB8508 = {
 			isa = PBXGroup;
 			children = (
 				2EC99B452DAA318100AB8508 /* diamond v1.1 */,
 				2EC99B532DAA318400AB8508 /* diamond v1.1Tests */,
 				2EC99B5D2DAA318400AB8508 /* diamond v1.1UITests */,
+				2E7E57A42DB05735009CA2C4 /* Frameworks */,
 				2EC99B442DAA318100AB8508 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 			);
 			name = "diamond v1.1";
 			packageProductDependencies = (
+				2E240E152DB7503A00CA97D3 /* LinkKit */,
 			);
 			productName = "diamond v1.1";
 			productReference = 2EC99B432DAA318100AB8508 /* diamond v1.1.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 2EC99B3A2DAA318100AB8508;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2E240E142DB7503A00CA97D3 /* XCRemoteSwiftPackageReference "plaid-link-ios-spm" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2EC99B442DAA318100AB8508 /* Products */;
 			projectDirPath = "";
@@ -558,6 +575,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2E240E142DB7503A00CA97D3 /* XCRemoteSwiftPackageReference "plaid-link-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/plaid/plaid-link-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2E240E152DB7503A00CA97D3 /* LinkKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2E240E142DB7503A00CA97D3 /* XCRemoteSwiftPackageReference "plaid-link-ios-spm" */;
+			productName = LinkKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2EC99B3B2DAA318100AB8508 /* Project object */;
 }
